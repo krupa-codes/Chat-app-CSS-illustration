@@ -1,98 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-  <title>Frontend Mentor | Chat App CSS Illustration</title>
+    <title>Frontend Mentor | Chat App CSS Illustration</title>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <main class="booking-page">
+    <main class="booking-page">
 
-    <section class="booking-feature">
-      <div class="booking-feature__background--left"></div>
-      <div class="booking-feature__phone">
-        <div class="booking-feature__phone-mockup">
-          <header class="phone-header">
-            <div class="user-profile">
-              <button class="back-btn">&#8249;</button>
-              <img src="./images/avatar.jpg" alt="Samuel Green profile picture">
-              <div class="user-info">
-                <h1>Samuel Green</h1>
-                <p>Available to Walk</p>
+      <section class="booking-feature">
+        <div class="booking-feature__background--left"></div>
+        <div class="booking-feature__phone">
+          <div class="booking-feature__phone-mockup">
+            <header class="phone-header">
+              <div class="user-profile">
+                <button class="back-btn">&#8249;</button>
+                <img src="./images/avatar.jpg"
+                  alt="Samuel Green profile picture">
+                <div class="user-info">
+                  <h1>Samuel Green</h1>
+                  <p>Available to Walk</p>
+                </div>
+                <button class="menu-btn" aria-label="Open menu">⋮</button>
               </div>
-              <button class="menu-btn" aria-label="Open menu">⋮</button>
+            </header>
+            <div class="phone-body">
+              <p class="body-message-left">That sounds great. I’d be happy with
+                that.</p>
+              <p class="body-message-left">Could you send over some pictures of
+                your dog, please?
+              </p>
+              <div class="body-right">
+                <div class="phone-dog-gallary">
+                  <img src="./images/dog-image-1.jpg" alt="Dog picture">
+                  <img src="./images/dog-image-2.jpg" alt="Dog picture">
+                  <img src="./images/dog-image-3.jpg" alt="Dog picture">
+                </div>
+                <div class="body-message-right">
+                  <p>Here are a few pictures. She’s a happy girl!</p>
+                  <span>Can you make it?</span>
+                </div>
+              </div>
+              <p class="body-message-left">She looks so happy! The time we
+                discussed works. How long shall I take her
+                out for?</p>
+              <form class="phone-pricinng">
+                <label for="price-option">
+                  <input type="radio" name="duration" class="radio-circle">
+                  <span class="walk-time">30 minute walk</span>
+                  <span class="phone-price">$29</span>
+                </label>
+                <label for="price-option">
+                  <input type="radio" name="duration" class="radio-circle">
+                  <span class="walk-time">1 hour walk</span>
+                  <span class="phone-price">$49</span>
+                </label>
+              </form>
             </div>
-          </header>
-          <div class="phone-body">
-            <p class="body-message-left">That sounds great. I’d be happy with
-              that.</p>
-            <p class="body-message-left">Could you send over some pictures of
-              your dog, please?
-            <p>
-            <div class="body-right">
-              <div class="phone-dog-gallary">
-                <img src="./images/dog-image-1.jpg" alt="Dog picture">
-                <img src="./images/dog-image-2.jpg" alt="Dog picture">
-                <img src="./images/dog-image-3.jpg" alt="Dog picture">
-              </div>
-              <div class="body-message-right">
-                <p>Here are a few pictures. She’s ahappy girl!</p>
-                <span>Can you make it?</span>
-              </div>
+            <div class="phone-footer">
+              <form class="phone-booking">
+                <input type="text" class="phone-input"
+                  placeholder="Type a message...">
+                <button class="submit-button" type="submit"
+                  aria-label="Send message">
+                  &gt;
+                </button>
+              </form>
             </div>
-            <p class="body-message-left">She looks so happy! The time we
-              discussed works. How long shall I take her
-              out for?</p>
-            <form class="phone-pricinng">
-              <label for="price-option">
-                <input type="radio" name="duration" class="radio-circle">
-                <span class="walk-time">30 minute walk</span>
-                <span class="phone-price">$29</span>
-              </label>
-              <label for="price-option">
-                <input type="radio" name="duration" class="radio-circle">
-                <span class="walk-time">1 hour walk</span>
-                <span class="phone-price">$49</span>
-              </label>
-            </form>
           </div>
-          <div class="phone-footer">
-            <form class="phone-booking">
-              <input type="text" class="phone-input" placeholder="Type a message...">
-              <button class="submit-button" type="submit" aria-label="Send message">
-                &gt;
-              </button>
-            </form>
+
+          <div class="booking-feature__content">
+            <h1 class="booking-feature__title">Simple booking</h1>
+            <p class="booking-feature__description">
+              Stay in touch with our dog walkers through the chat interface.
+              This makes it easy to discuss arrangements and make bookings.
+              Once the walk has been completed you can rate your walker and
+              book again all through the chat.
+            </p>
           </div>
         </div>
-
-        <div class="booking-feature__content">
-          <h1 class="booking-feature__title">Simple booking</h1>
-          <p class="booking-feature__description">
-            Stay in touch with our dog walkers through the chat interface.
-            This makes it easy to discuss arrangements and make bookings.
-            Once the walk has been completed you can rate your walker and
-            book again all through the chat.
-          </p>
-        </div>
-      </div>  
-      <div class="booking-feature__background--right"></div>
-    </section>
-  </main>
-</body>
-
+        <div class="booking-feature__background--right"></div>
+      </section>
+    </main>
+  </body>
 </html>
+
+
