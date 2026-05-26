@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Purple-300: hsl(276, 100%, 81%);
+  --Purple-600: hsl(276, 55%, 52%);
+  --Gray-500: hsl(270, 7%, 64%);
+  --Gray-300: hsl(206, 6%, 79%);
+  --Gray-bg-left-chat: hsla(206, 6%, 79%, 0.3);
+  --Purple-950: hsl(271, 36%, 24%);
+  --Pink-500: hsl(293, 100%, 63%);
+  --Purple-500: hsl(264, 100%, 61%);
+  --White: hsl(0, 100%, 100%);
+  --Gray-100: hsl(270, 20%, 96%);
+  --Purple-950: hsl(271, 36%, 24%);
+  --Pink-400: hsl(289, 100%, 72%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--Gray-100);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.booking-feature__phone {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+
+.booking-feature__background--left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65rem;
+  height: 70rem;
+  background: linear-gradient(to bottom, var(--Pink-500), var(--Purple-500));
+  border-radius: 0 0 35rem 35rem;
+  transform: translateX(-70%);
+  z-index: -1;
+}
+
+.booking-feature__background--right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 65rem;
+  height: 70rem;
+  background-color: hsla(270, 20%, 90%, 0.4);
+  border-radius: 35rem 35rem 0rem 0rem;
+  transform: translateX(80%);
+  z-index: -1;
+}
+
+.booking-feature__phone-mockup {
+  margin-block-start: 15rem;
+  width: 28rem;
+  border-radius: 1rem;
+  background-color: var(--Gray-100);
+  border-radius: 2rem 2rem 2rem 2rem;
+  box-shadow:
+    0 0 0rem 1rem var(--White),
+    0 0 3rem 2rem var(--Gray-300);
+}
+
+.phone-header {
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 2rem 2rem 0.8rem 0.8rem;
+  background: linear-gradient(to left, var(--Pink-500), var(--Purple-500));
+  position: relative;
+}
+
+.back-btn {
+  border: none;
+  background: none;
+  color: var(--White);
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.user-profile::before {
+  content: "";
+  width: 15rem;
+  height: 2rem;
+  background-color: var(--White);
+  border-radius: 0 0 1.2rem 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-profile img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin: 0;
+  border: 0.2rem solid var(--White);
+}
+
+.user-info {
+  color: var(--White);
+}
+
+.user-info h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.user-info p {
+  font-size: 1rem;
+  color: var(--Purple-300);
+}
+
+.menu-btn {
+  margin-inline-start: 8rem;
+  border: none;
+  background: none;
+  color: var(--White);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.body-message-left {
+  width: 16rem;
+  color: var(--Purple-600);
+  padding: 1rem;
+  margin: 1rem;
+  line-height: 1.3;
+  background-color: var(--Gray-bg-left-chat);
+  border-radius: 1rem 1rem 1rem 0.3rem;
+}
+
+.body-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.phone-dog-gallary {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 1rem 1rem 1rem;
+}
+
+.phone-dog-gallary img {
+  width: 5rem;
+  border-radius: 1rem;
+}
+
+.body-message-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.body-message-right p {
+  width: 17rem;
+  line-height: 1.3;
+  color: var(--Gray-300);
+  background-color: var(--White);
+  padding: 1rem;
+  margin-inline-end: 1rem;
+  border-radius: 1rem 1rem 0.5rem 1rem;
+}
+
+.body-message-right span {
+  line-height: 1.3;
+  color: var(--Gray-300);
+  background-color: var(--White);
+  padding: 1rem;
+  margin-inline-end: 1rem;
+  border-radius: 1rem 1rem 0.3rem 1rem;
+}
+
+.phone-pricinng {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.phone-pricinng label {
+  width: 18rem;
+  line-height: 1.3;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  color: var(--White);
+  border-radius: 1rem 1rem 1rem 0.3rem;
+  background: linear-gradient(to left, var(--Pink-500), var(--Purple-500));
+}
+
+.radio-circle {
+  appearance: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 0.2rem solid var(--Pink-400);
+  border-radius: 50%;
+  margin-inline-end: 1rem;
+  cursor: pointer;
+}
+
+.phone-price {
+  margin-inline-start: auto;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.phone-footer {
+  padding-block-end: 1rem;
+}
+
+.phone-booking {
+  background-color: var(--White);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2.1rem;
+  padding: 1.1rem;
+  margin-inline: 1rem;
+}
+
+.phone-input {
+  border: none;
+  background-color: var(--White);
+}
+
+.phone-input::placeholder {
+  color: var(--Gray-300);
+  font-size: 1rem;
+}
+
+.submit-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 50%;
+  color: var(--White);
+  background-color: var(--Purple-950);
+}
+
+.booking-feature__content {
+  text-align: center;
+}
+
+.booking-feature__title {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--Purple-950);
+  margin-block-end: 3rem;
+}
+
+.booking-feature__description {
+  width: min(55rem, 100%);
+  font-size: 1.5rem;
+  color: var(--Gray-500);
+  line-height: 1.5;
+  padding: 0 2rem;
+}
+
+@media(min-width:900px) {
+  .booking-feature__phone {
+    flex-direction: row;
+  }
+
+  .booking-feature__phone-mockup {
+    margin-block-start: 0;
+    width: 30rem;
+  }
+
+  .booking-feature__background--left {
+    height: 80rem;
+    transform: translateX(-20%);
+  }
+
+  .booking-feature__background--right {
+    height: 80rem;
+    transform: translateX(20%);
+  }
+
+  .booking-feature__content {
+    text-align: left;
+    margin-inline-end: 8rem;
+  }
+
+  .booking-feature__title {
+    font-size: 4.5rem;
+  }
+
+  .booking-feature__description {
+    width: 55rem;
+    font-size: 2rem;
+    line-height: 1.7;
+    padding: 0;
+  }
+}
